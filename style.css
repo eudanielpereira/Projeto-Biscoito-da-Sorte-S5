@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-purple: #34355B;
+}
+
+body { 
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+        
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+
+    width: min(42.8rem, 90%);
+    text-align: center;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    margin-top: -8rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-purple);
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1.4rem 0 2.4rem;
+    color: var(--color-purple);
+}
+
+.screen1 img {
+    cursor: pointer;
+}
+
+.screen1 img:hover{
+    animation: shake 0.08s ease-in-out infinite alternate-reverse;
+}
+
+.message {
+    padding: 10px;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    margin: 1.7rem 0 6rem;
+
+    animation: down-up 2s ease-in-out;
+}
+
+.message p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+button {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    padding: 1.6rem;
+
+    border-radius: .4rem;
+    background: #FF9500;
+    border: none;
+
+    margin-top: 6rem;
+
+    cursor: pointer;
+
+    transition: background .3s;
+}
+
+button:hover{
+    background: #fa4f00;
+}
+
+@keyframes shake {
+    from {
+        transform: rotate(0.005turn);
+      }
+    
+      to {
+        transform: rotate(0);
+      }
+}
+
+@keyframes down-up {
+    from {
+        transform: translateY(16rem) scale(0);
+        opacity: .2;
+      }
+    
+      to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+}
